@@ -1,0 +1,72 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+<title>Restauracja Pasibrzuch</title>
+<link rel="stylesheet" href="pasibrzuch.css">
+<script
+  src="jquery-3.6.0.min.js">
+  </script>
+<script src="./index.js"></script>
+
+
+</head>
+  <body>
+
+    <div class="main-nav">
+        <ul class="nav">
+          <li><a href="index.html">Strona Główna</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+     <header>
+      <img src="https://static.pyszne.pl/images/restaurants/pl/O1730RR/logo_465x320.png" alt="Logo restauracji" class="profile-image">
+      <div id="cart">
+        
+      <div class="cart-element">
+        <label for="name">
+          Imie i nazwisko:
+        </label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="adress">
+          Adres:
+        </label><br>
+        <input type="text" id="adress" name="adress">
+        <br>
+        <button onclick="placeOrder()">zamów</button>
+      </div>
+      <div class="cart-element">
+        <p>Koszyk:</p>
+        <ul>
+          
+        </ul>
+      </div>
+      </div>
+    </header>
+    <div>
+      <h1>Dania Dnia:</h1>
+      <div class="dish">
+      <img src="img/salatka.jpg">
+      <p>Sałatka</p>
+      <button onclick="addDish ('Sałatka')">Dodaj do koszyka</button>
+    </div>
+    <div class="dish">
+      <img src="img/zupa.png">
+      <p>Zupa Ogórkowa</p>
+      <button onclick="addDish ('Zupa Ogórkowa')">Dodaj do koszyka</button>
+    </div>
+    <div class="dish">
+      <img src="img/Schabowy.png">
+      <p>Schabowy</p>
+      <button onclick="addDish ('Schabowy')">Dodaj do koszyka</button>
+      </div>
+       <div class="dish">
+      <img src="img/mielony.png">
+      <p>Mielony</p>
+      <button onclick="addDish ('Mielony')">Dodaj do koszyka</button>
+      </div> 
+      
+    </div>
+    
+  </body>
+  </html>
